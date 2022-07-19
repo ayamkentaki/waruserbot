@@ -9,7 +9,7 @@ _HELLBOT_MAIN() {
     $(_python_ 'from git import Repo
 import sys
 
-_UPSTREAM_ = "https://github.com/MeAbhish3k/waruserbot"
+_UPSTREAM_ = "https://github.com/ayamkentaki/waruserbot"
 _BRANCH_ = "master"
 
 repo = Repo.init()
@@ -21,12 +21,12 @@ repo.heads[_BRANCH_].checkout(True) ')
 
 _hell_repo () {
     local hrepo
-    hrepo=`echo "aHR0cHM6Ly9naXRodWIuY29tL3dhcnVzZXJib3QvUGx1Z2lucw==" | base64 -d`
+    hrepo=`echo "aHR0cHM6Ly9naXRodWIuY29tL2F5YW1rZW50YWtpL1BsdWdpbnM=" | base64 -d`
     echo "$rlink"
 }
 
 _hell_zip () {
-    echo "aHR0cHM6Ly9naXRodWIuY29tL3dhcnVzZXJib3QvUGx1Z2lucy9hcmNoaXZlL21hc3Rlci56aXA= " | base64 -d
+    echo "aHR0cHM6Ly9naXRodWIuY29tL2F5YW1rZW50YWtpL1BsdWdpbnMvYXJjaGl2ZS9tYXN0ZXIuemlw " | base64 -d
 }
 
 _HELLBOT_PLUG() {
